@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        .cont {
+            display: flex;
+           justify-content: space-between;
+           align-items: center;
+            /* width: 100%;
+            height: 25px; */
+            background-color: rgb(24, 9, 196);
+            /* margin-top: 3px; */
+        }
+        .header {
+            color: rgb(241, 241, 241);
+            /* float: right; */
+            margin-right: 10px ;
+        }
+        .h3 {
+            color: rgb(241, 241, 241);
+            margin-left: 10px ;
+            text-shadow: 10px 5px 50px rgb(83, 0, 217);
+        }
+        .grid{
+            border:1px solid black;
+            display: grid;
+            grid-template-columns:  100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns:repeat(3,1fr);
+            row-gap: 20px;
+            column-gap: 30px;
+
+        }
+        .grid>div{
+            padding: 29px;
+        }
+        #one,#two,#three{
+            background-color: rgb(16, 9, 223);
+            box-shadow: 10px 5px 50px;
+             text-align: center;
+        }
+        .project{
+            border: 2px solid black;
+            display:grid;
+            grid-template-rows: 20px 20px 20px ;
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        .project>div{
+            padding: 29px;
+        }
+        #one1,#two2{
+              background-color: rgb(255, 255, 255);
+            box-shadow: 10px 5px 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <div class="h3"><h3>My portfolio</h3></div>
+    <div class="header"><header>about&nbsp;&nbsp;&nbsp;&nbsp;skill&nbsp;&nbsp;&nbsp;&nbsp;project&nbsp;&nbsp;&nbsp;&nbsp;contact</header></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="intro">
+        <div class="intro1"><h1  >Hi, I am </h1></div>
+        <div class="intro2"><h2  >A Passionate Full stack Developer</h2></div>
+    </div>
+    <div class="img">
+        <img src="profile.avif">
+    </div>
+        <br>
+        <br> 
+        <br>
+        <div class="about">
+        <h2>About me </h2>
+        <p>
+            I am a dedicated and passionate full-stack developer with a strong foundation in both front-end and back-end technologies. I thrive on creating dynamic and responsive web applications that provide seamless user experiences. With a keen eye for detail and a commitment to writing clean, efficient code, I continuously seek to expand my skill set and stay updated with the latest industry trends. My goal is to contribute to innovative projects that make a meaningful impact while collaborating with like-minded professionals in the tech community.</p></div>
+
+    <br>
+    <br>
+    <br>
+    <h2>Skills</h2>
+    <div class="grid">
+    <div id="one"> <big>HTML beginner</big></div>
+    <div id="two"> <big>Javascript Beginner</big></div>
+    <div id="three"><big>CSS  Beginner</big></div>
+    </div>
+    <br>
+    <br>
+    <h1>My projects</h1>
+    <div class="project">
+        <div id="one1"><big>Project 1 (a simple HTML & CSS  webpage</big>) </div>
+        <div id="two2"><big>Project 2 (another awesome mini project)</big></div>
+    </div>
+<br>
+<br>
+<center>
+ <div class="form">
+    <div class="name">
+      Name  <input type="text" placeholder="Write your Name">
+    </div>
+    <br>
+    <div class="email">
+    Email ID     <input type="email" placeholder=" Write your Email ID" id="email">
+    </div>
+    <br>
+    <div class="message">
+    Message    <input type="text" placeholder="Write a message" id="message">
+    </div>
+    <br>
+    <br>
+    <button style="padding: 20px;" type="submit"> SEND </button>
+ </div></center>
+ <br>
+ <br>
+ <center>
+ <footer style="background-color: blue;">
+   @2025 JohnDoe. All rights are reserved.
+ </footer></center>
+</body>
+</html>
